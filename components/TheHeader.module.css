@@ -1,0 +1,15 @@
+.header {
+  padding: 12px 0;
+
+  background-color: #fff;
+}
+
+.header__container {
+  margin: 0 auto;
+
+  max-width: var(--max-width);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

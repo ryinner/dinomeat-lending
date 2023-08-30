@@ -1,0 +1,9 @@
+.main {
+  padding: 12px 0;
+}
+
+.main__container {
+  margin: 0 auto;
+
+  max-width: var(--max-width);
+}

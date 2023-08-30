@@ -1,0 +1,13 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  gap: var(--gap);
+
+  list-style-type: none;
+}
+
+.active {
+  color: blue;
+}
