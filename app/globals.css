@@ -1,6 +1,6 @@
 :root {
   --max-width: 1200px;
-  --border-radius: 12px;
+  --border-radius: 6px;
   --gap: 10px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
@@ -9,6 +9,11 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --z-index-background: 0;
+  --z-index-content: 1;
+  --z-index-modals: 2;
+  --z-index-controls: 3;
 }
 
 * {

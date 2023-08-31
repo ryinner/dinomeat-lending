@@ -1,4 +1,8 @@
-.navigation {
+.navigationBurger {
+  display: none;
+}
+
+.navigationList {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -6,6 +10,51 @@
   gap: var(--gap);
 
   list-style-type: none;
+}
+
+@media screen and (max-width: 900px) {
+  .navigationList {
+    position: fixed;
+
+    right: 0;
+    top: 0;
+
+    padding: 1rem 2rem;
+
+    height: 100vh;
+
+    color: #fff;
+    background-color: #000;
+
+    margin-right: -15rem;
+
+    flex-direction: column;
+    justify-content: inherit;
+
+    z-index: var(--z-index-controls);
+
+    transition: 300ms all ease-in;
+  }
+
+
+  .navigationListActive {
+    margin-right: 0;
+
+    transition: 300ms all ease-out;
+  }
+
+  .navigationBurger {
+    display: inherit;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: #000;
+
+    border-radius: var(--border-radius);
+
+    cursor: pointer;
+  }
 }
 
 .link {
