@@ -1,0 +1,21 @@
+.section {
+  margin: 0 auto;
+
+  max-width: var(--max-width);
+}
+
+.products__heading {
+  font-size: 2rem;
+
+  padding: 2rem 0;
+}
+
+.products__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--gap);
+}
+
+.products__item {
+  grid-column: 4 span;
+}
