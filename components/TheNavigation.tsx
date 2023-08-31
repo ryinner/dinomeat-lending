@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import HamburgerMenuIcon from './Icons/HamburgerMenuIcon';
 import styles from './TheNavigation.module.css';
 
 const linksMap = [
@@ -17,9 +18,9 @@ export default function TheNavigation () {
 
   return (
     <nav className={styles.navigation}>
-      <span className={styles.navigationBurger} title='Навигация' onClick={burgerMenuHandler} />
+      <div className={styles.navigationBurger}><HamburgerMenuIcon onClick={burgerMenuHandler} /></div>
       <ul className={`${styles.navigationList} ${isActive && styles.navigationListActive}`}>
-        <li><span className={styles.navigationBurger} title='Навигация' onClick={burgerMenuHandler} /></li>
+        <li className={styles.navigationBurger}><HamburgerMenuIcon style={{fill: '#fff'}} className={styles.navigationBurger} onClick={burgerMenuHandler} /></li>
         {linksMap.map(link => <li key={link.label} className={styles.link}><Link href={link.link}>{link.label}</Link></li>)}
       </ul>
     </nav>

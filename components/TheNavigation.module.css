@@ -44,12 +44,12 @@
   }
 
   .navigationBurger {
+    position: relative;
+
     display: inherit;
 
     width: 20px;
     height: 20px;
-
-    background-color: #000;
 
     border-radius: var(--border-radius);
 
