@@ -8,6 +8,29 @@
   list-style-type: none;
 }
 
-.active {
-  color: blue;
+.link {
+  font-size: 1.2rem;
+
+  position: relative;
+}
+
+.link::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: -4px;
+  left: 0;
+
+  width: 0;
+
+  border-bottom: 2px solid #000;
+
+  transition: 200ms width ease-in;
+}
+
+.link:hover::after {
+  width: 100%;
+
+  transition: 200ms width ease-out;
 }

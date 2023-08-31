@@ -1,4 +1,5 @@
 import { Black_Ops_One } from 'next/font/google';
+import Link from 'next/link';
 import styles from './TheHeader.module.css';
 import TheNavigation from './TheNavigation';
 
@@ -8,7 +9,7 @@ export default function TheHeader() {
   return (
     <header className={styles.header}>
       <div className={styles.header__container}>
-        <div className={blackOpsOne.className}>Dinomeät</div>
+        <div className={`${blackOpsOne.className} ${styles.logo}`}><Link href='/'>Dinomeät</Link></div>
         <TheNavigation />
       </div>
     </header>
