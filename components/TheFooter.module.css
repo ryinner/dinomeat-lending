@@ -1,5 +1,7 @@
 .footer {
-  padding: 12px 0;
+  padding: 1rem 0;
+
+  margin-top: 2rem;
 
   color: #fff;
   background-color: #000;
@@ -9,4 +11,16 @@
   margin: 0 auto;
 
   max-width: var(--max-width);
+
+  text-align: center;
+}
+
+.footer__paragraph:first-child {
+  font-weight: bold;
+
+  font-size: 1.5rem;
+}
+
+.footer__paragraph {
+  padding-top: 0.5rem;
 }

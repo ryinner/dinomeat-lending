@@ -1,3 +1,4 @@
+import TheDelivery from '@/components/TheDelivery';
 import TheHero from '@/components/TheHero';
 import TheProductsList from '@/components/TheProductsList';
 
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <TheHero />
       <TheProductsList />
+      <TheDelivery />
     </>
   );
 }

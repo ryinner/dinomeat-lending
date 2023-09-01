@@ -1,16 +1,18 @@
 .section {
   margin: 0 auto;
 
+  padding-top: 2rem;
+
   max-width: var(--max-width);
 }
 
 .products__heading {
   font-size: 2rem;
-
-  padding: 2rem 0;
 }
 
 .products__container {
+  padding-top: 2rem;
+
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--gap);

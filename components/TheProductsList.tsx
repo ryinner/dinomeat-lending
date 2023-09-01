@@ -1,5 +1,7 @@
 import { StaticImageData } from 'next/image';
 import Cross from '../public/products/cross.jpg';
+import Foot from '../public/products/foot.jpeg';
+import Tee from '../public/products/tee.jpeg';
 import ProductItem from './ProductItem';
 import styles from './TheProductsList.module.css';
 
@@ -9,7 +11,19 @@ const products: Product[] = [
     name: 'Спортивные кроссовки',
     price: 100000,
     image: Cross
-  }
+  },
+  {
+    id: 2,
+    name: 'Футболка black lord',
+    price: 1000000,
+    image: Foot
+  },
+  {
+    id: 3,
+    name: 'Футболка Tee',
+    price: 1000001,
+    image: Tee
+  },
 ];
 
 export default function TheProductsList () {
