@@ -12,8 +12,29 @@
   padding: 1rem 0;
 }
 
+.product__commerce {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .product__price {
   padding: 1rem 0;
 
   font-weight: bold;
+}
+
+.product__buy {
+  padding: 0.3rem 0.5rem;
+
+  background: #fff;
+
+  color: #000;
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  outline: none;
+  border: 1px solid #000;
+  border-radius: var(--border-radius);
 }
