@@ -14,7 +14,7 @@ const products: Product[] = [
   },
   {
     id: 2,
-    name: 'Футболка black lord',
+    name: 'Футболка Black lord',
     price: 1000000,
     image: Foot
   },
